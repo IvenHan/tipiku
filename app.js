@@ -1143,7 +1143,8 @@ function normalizeForCompare(input) {
     .replaceAll(/\s+/g, "")
     .replaceAll("　", "")
     .replaceAll("・", "")
-    .replaceAll("〜", "～");
+    .replaceAll("〜", "～")
+    .replaceAll("～", "");
 }
 
 function katakanaFromKana(input) {
@@ -1206,9 +1207,9 @@ function evaluateCurrentInput(input) {
   }
 
   const candidates = [
-    { text: current.kana || "", useKanaNorm: true },
-    { text: katakanaFromKana(current.kana || ""), useKanaNorm: true },
-    { text: (current.term || "").trim(), useKanaNorm: false },
+    { text: normalizeForCompare(current.kana || ""), useKanaNorm: true },
+    { text: normalizeForCompare(katakanaFromKana(current.kana || "")), useKanaNorm: true },
+    { text: normalizeForCompare((current.term || "").trim()), useKanaNorm: false },
   ].filter((candidate) => candidate.text);
 
   let best = candidates[0] || { text: current.kana || "", useKanaNorm: true };
