@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipiku</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="fx-canvas" aria-hidden="true"></canvas>
+
+    <main class="app">
+      <header class="topbar">
+        <div class="brand">Tipiku</div>
+        <div class="top-controls">
+          <label class="pack-picker" for="top-pack-select">
+            <span>词包</span>
+            <select id="top-pack-select"></select>
+          </label>
+          <button id="import-library-btn" type="button">上传词库</button>
+          <button id="export-library-btn" type="button">下载词库</button>
+          <input id="import-library-input" type="file" accept="application/json" hidden />
+          <button type="button" class="menu-btn" data-menu-target="mistakes">错题本</button>
+        </div>
+      </header>
+
+      <section id="menu-surface" class="menu-surface" hidden>
+        <div id="menu-view-mistakes" class="menu-view">
+          <div class="menu-head">
+            <h2>错题本</h2>
+            <div class="menu-head-actions">
+              <button id="practice-mistake-btn" class="primary" type="button">练习错题</button>
+              <button id="close-menu-btn" type="button">收起</button>
+            </div>
+          </div>
+          <div class="mistake-list-wrap">
+            <table id="mistake-table">
+              <thead>
+                <tr>
+                  <th>单词</th>
+                  <th>假名</th>
+                  <th>错误次数</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <div class="word-wrap" id="word-wrap">
+          <p class="word" id="question-word">加载中...</p>
+          <div class="answer-bubble" id="answer-bubble" aria-live="polite"></div>
+        </div>
+        <input
+          id="answer-input"
+          type="text"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder=""
+        />
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+
+        <div id="quiz-actions" class="quiz-actions">
+          <button id="skip-btn" type="button">跳过</button>
+          <button id="restart-btn" type="button">重开本词包</button>
+        </div>
+
+        <div id="complete-panel" class="complete-panel" hidden>
+          <p class="complete-emoji" aria-hidden="true">😄</p>
+          <p class="complete-title">测试完成</p>
+          <p class="complete-meta">错误次数：<strong id="complete-error-count">0</strong></p>
+          <div class="complete-actions" id="complete-actions">
+            <button id="complete-restart-btn" type="button">重新测试👈</button>
+            <button id="complete-next-btn" type="button">👉下一个词包</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
