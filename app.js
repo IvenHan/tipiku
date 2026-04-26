@@ -342,6 +342,11 @@ const el = {
   importLibraryBtn: document.getElementById("import-library-btn"),
   exportLibraryBtn: document.getElementById("export-library-btn"),
   importLibraryInput: document.getElementById("import-library-input"),
+  hamburgerBtn: document.getElementById("hamburger-btn"),
+  mobileMenu: document.getElementById("mobile-menu"),
+  mobileImportBtn: document.getElementById("mobile-import-btn"),
+  mobileExportBtn: document.getElementById("mobile-export-btn"),
+  mobileMistakesBtn: document.getElementById("mobile-mistakes-btn"),
   menuBtns: Array.from(document.querySelectorAll(".menu-btn")),
   menuSurface: document.getElementById("menu-surface"),
   closeMenuBtn: document.getElementById("close-menu-btn"),
@@ -410,6 +415,33 @@ function bindEvents() {
 
   if (el.exportLibraryBtn) {
     el.exportLibraryBtn.addEventListener("click", exportPackLibraryFile);
+  }
+
+  if (el.hamburgerBtn && el.mobileMenu) {
+    el.hamburgerBtn.addEventListener("click", () => {
+      toggleMobileMenu();
+    });
+  }
+
+  if (el.mobileImportBtn && el.importLibraryBtn) {
+    el.mobileImportBtn.addEventListener("click", () => {
+      closeMobileMenu();
+      el.importLibraryBtn.click();
+    });
+  }
+
+  if (el.mobileExportBtn && el.exportLibraryBtn) {
+    el.mobileExportBtn.addEventListener("click", () => {
+      closeMobileMenu();
+      el.exportLibraryBtn.click();
+    });
+  }
+
+  if (el.mobileMistakesBtn) {
+    el.mobileMistakesBtn.addEventListener("click", () => {
+      closeMobileMenu();
+      toggleMenu("mistakes");
+    });
   }
 
   el.practiceMistakeBtn.addEventListener("click", () => {
@@ -514,6 +546,12 @@ function bindEvents() {
     if (!inMenu && !inTopButton) {
       closeMenu();
     }
+
+    const inMobileMenu = event.target.closest("#mobile-menu");
+    const inHamburger = event.target.closest("#hamburger-btn");
+    if (!inMobileMenu && !inHamburger) {
+      closeMobileMenu();
+    }
   });
 
   window.addEventListener("keydown", (event) => {
@@ -537,8 +575,26 @@ function bindEvents() {
 
     if (event.key === "Escape") {
       closeMenu();
+      closeMobileMenu();
     }
   });
+}
+
+function toggleMobileMenu() {
+  if (!el.mobileMenu || !el.hamburgerBtn) {
+    return;
+  }
+  const willShow = el.mobileMenu.hidden;
+  el.mobileMenu.hidden = !willShow;
+  el.hamburgerBtn.setAttribute("aria-expanded", willShow ? "true" : "false");
+}
+
+function closeMobileMenu() {
+  if (!el.mobileMenu || !el.hamburgerBtn) {
+    return;
+  }
+  el.mobileMenu.hidden = true;
+  el.hamburgerBtn.setAttribute("aria-expanded", "false");
 }
 
 async function loadPackLibrary() {
@@ -826,12 +882,12 @@ function onTyping() {
     state.wrongSubmitStreak = 0;
     state.autoHintVisible = false;
     el.answerInput.value = "";
-    el.answerInput.disabled = true;
     el.feedback.innerHTML = "";
     state.enterClearReady = false;
     triggerConfettiBurst();
     playSuccessSound();
     updateAnswerBubble();
+    focusAnswerInput();
 
     setTimeout(() => {
       moveNextWord();

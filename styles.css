@@ -169,6 +169,36 @@ button:disabled {
   transform: none;
 }
 
+.hamburger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: calc(62px + env(safe-area-inset-top));
+  right: calc(14px + env(safe-area-inset-right));
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px) saturate(125%);
+  box-shadow: 0 14px 50px rgba(15, 23, 42, 0.12);
+  z-index: 6;
+  animation: surface-in 0.18s ease;
+}
+
+.mobile-menu button {
+  width: 100%;
+  justify-content: center;
+}
+
 .menu-btn.active {
   background: rgba(15, 118, 110, 0.18);
 }
@@ -463,5 +493,20 @@ thead th {
 
   .pack-picker select {
     padding: 10px 12px;
+  }
+
+  #import-library-btn,
+  #export-library-btn,
+  .menu-btn[data-menu-target="mistakes"] {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .mobile-menu {
+    top: calc(56px + env(safe-area-inset-top));
+    right: calc(10px + env(safe-area-inset-right));
   }
 }

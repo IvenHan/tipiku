@@ -21,8 +21,17 @@
           <button id="export-library-btn" type="button">下载词库</button>
           <input id="import-library-input" type="file" accept="application/json" hidden />
           <button type="button" class="menu-btn" data-menu-target="mistakes">错题本</button>
+          <button id="hamburger-btn" class="hamburger" type="button" aria-label="菜单" aria-expanded="false">
+            ☰
+          </button>
         </div>
       </header>
+
+      <section id="mobile-menu" class="mobile-menu" hidden>
+        <button id="mobile-import-btn" type="button">上传词库</button>
+        <button id="mobile-export-btn" type="button">下载词库</button>
+        <button id="mobile-mistakes-btn" type="button">错题本</button>
+      </section>
 
       <section id="menu-surface" class="menu-surface" hidden>
         <div id="menu-view-mistakes" class="menu-view">
@@ -56,9 +65,13 @@
         <input
           id="answer-input"
           type="text"
-          autocomplete="off"
+          autocomplete="new-password"
+          autocorrect="off"
           autocapitalize="off"
           spellcheck="false"
+          inputmode="text"
+          name="tipiku-answer"
+          enterkeyhint="done"
           placeholder=""
         />
         <div id="feedback" class="feedback" aria-live="polite"></div>
