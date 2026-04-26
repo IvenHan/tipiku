@@ -4,7 +4,7 @@ const STORAGE_KEYS = {
   selectedPackId: "jp_mvp_selected_pack",
   packLibrary: "jp_pack_library_json",
 };
-const PACK_LIBRARY_PATH = "./data/packs.json";
+const PACK_LIBRARY_PATH = "./tipiku-packs-updated.json";
 
 const LEVELS = ["N5", "N4", "N3", "N2", "N1"];
 const TYPE_LABEL = {

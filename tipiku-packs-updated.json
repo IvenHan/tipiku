@@ -1,0 +1,1515 @@
+[
+  {
+    "id": "n5-noun-core",
+    "name": "N5 常用名词",
+    "level": "N5",
+    "type": "noun",
+    "words": [
+      {
+        "term": "水",
+        "kana": "みず",
+        "meaning": "水"
+      },
+      {
+        "term": "学校",
+        "kana": "がっこう",
+        "meaning": "学校"
+      },
+      {
+        "term": "友達",
+        "kana": "ともだち",
+        "meaning": "朋友"
+      },
+      {
+        "term": "先生",
+        "kana": "せんせい",
+        "meaning": "老师"
+      },
+      {
+        "term": "日本",
+        "kana": "にほん",
+        "meaning": "日本"
+      },
+      {
+        "term": "時間",
+        "kana": "じかん",
+        "meaning": "时间"
+      },
+      {
+        "term": "学生",
+        "kana": "がくせい",
+        "meaning": "学生"
+      },
+      {
+        "term": "家",
+        "kana": "いえ",
+        "meaning": "家"
+      },
+      {
+        "term": "部屋",
+        "kana": "へや",
+        "meaning": "房间"
+      },
+      {
+        "term": "駅",
+        "kana": "えき",
+        "meaning": "车站"
+      },
+      {
+        "term": "電車",
+        "kana": "でんしゃ",
+        "meaning": "电车"
+      },
+      {
+        "term": "車",
+        "kana": "くるま",
+        "meaning": "汽车"
+      },
+      {
+        "term": "自転車",
+        "kana": "じてんしゃ",
+        "meaning": "自行车"
+      },
+      {
+        "term": "本",
+        "kana": "ほん",
+        "meaning": "书"
+      },
+      {
+        "term": "新聞",
+        "kana": "しんぶん",
+        "meaning": "报纸"
+      },
+      {
+        "term": "手紙",
+        "kana": "てがみ",
+        "meaning": "信"
+      },
+      {
+        "term": "電話",
+        "kana": "でんわ",
+        "meaning": "电话"
+      },
+      {
+        "term": "携帯",
+        "kana": "けいたい",
+        "meaning": "手机"
+      },
+      {
+        "term": "机",
+        "kana": "つくえ",
+        "meaning": "桌子"
+      },
+      {
+        "term": "椅子",
+        "kana": "いす",
+        "meaning": "椅子"
+      },
+      {
+        "term": "鉛筆",
+        "kana": "えんぴつ",
+        "meaning": "铅笔"
+      },
+      {
+        "term": "紙",
+        "kana": "かみ",
+        "meaning": "纸"
+      },
+      {
+        "term": "靴",
+        "kana": "くつ",
+        "meaning": "鞋"
+      },
+      {
+        "term": "服",
+        "kana": "ふく",
+        "meaning": "衣服"
+      },
+      {
+        "term": "店",
+        "kana": "みせ",
+        "meaning": "商店"
+      },
+      {
+        "term": "会社",
+        "kana": "かいしゃ",
+        "meaning": "公司"
+      },
+      {
+        "term": "病院",
+        "kana": "びょういん",
+        "meaning": "医院"
+      },
+      {
+        "term": "銀行",
+        "kana": "ぎんこう",
+        "meaning": "银行"
+      },
+      {
+        "term": "公園",
+        "kana": "こうえん",
+        "meaning": "公园"
+      },
+      {
+        "term": "海",
+        "kana": "うみ",
+        "meaning": "海"
+      },
+      {
+        "term": "山",
+        "kana": "やま",
+        "meaning": "山"
+      },
+      {
+        "term": "川",
+        "kana": "かわ",
+        "meaning": "河"
+      },
+      {
+        "term": "天気",
+        "kana": "てんき",
+        "meaning": "天气"
+      },
+      {
+        "term": "誕生日",
+        "kana": "たんじょうび",
+        "meaning": "生日"
+      }
+    ]
+  },
+  {
+    "id": "n5-verb-core",
+    "name": "N5 常用动词",
+    "level": "N5",
+    "type": "verb",
+    "words": [
+      {
+        "term": "食べる",
+        "kana": "たべる",
+        "meaning": "吃"
+      },
+      {
+        "term": "行く",
+        "kana": "いく",
+        "meaning": "去"
+      },
+      {
+        "term": "見る",
+        "kana": "みる",
+        "meaning": "看"
+      },
+      {
+        "term": "飲む",
+        "kana": "のむ",
+        "meaning": "喝"
+      },
+      {
+        "term": "読む",
+        "kana": "よむ",
+        "meaning": "读"
+      },
+      {
+        "term": "聞く",
+        "kana": "きく",
+        "meaning": "听"
+      },
+      {
+        "term": "書く",
+        "kana": "かく",
+        "meaning": "写"
+      },
+      {
+        "term": "話す",
+        "kana": "はなす",
+        "meaning": "说"
+      },
+      {
+        "term": "買う",
+        "kana": "かう",
+        "meaning": "买"
+      },
+      {
+        "term": "会う",
+        "kana": "あう",
+        "meaning": "见面"
+      },
+      {
+        "term": "帰る",
+        "kana": "かえる",
+        "meaning": "回去"
+      },
+      {
+        "term": "来る",
+        "kana": "くる",
+        "meaning": "来"
+      },
+      {
+        "term": "する",
+        "kana": "する",
+        "meaning": "做"
+      },
+      {
+        "term": "寝る",
+        "kana": "ねる",
+        "meaning": "睡觉"
+      },
+      {
+        "term": "起きる",
+        "kana": "おきる",
+        "meaning": "起床"
+      },
+      {
+        "term": "働く",
+        "kana": "はたらく",
+        "meaning": "工作"
+      },
+      {
+        "term": "休む",
+        "kana": "やすむ",
+        "meaning": "休息"
+      },
+      {
+        "term": "勉強する",
+        "kana": "べんきょうする",
+        "meaning": "学习"
+      },
+      {
+        "term": "歩く",
+        "kana": "あるく",
+        "meaning": "走路"
+      },
+      {
+        "term": "走る",
+        "kana": "はしる",
+        "meaning": "跑"
+      },
+      {
+        "term": "乗る",
+        "kana": "のる",
+        "meaning": "乘坐"
+      },
+      {
+        "term": "降りる",
+        "kana": "おりる",
+        "meaning": "下车"
+      },
+      {
+        "term": "開ける",
+        "kana": "あける",
+        "meaning": "打开"
+      },
+      {
+        "term": "閉める",
+        "kana": "しめる",
+        "meaning": "关上"
+      },
+      {
+        "term": "待つ",
+        "kana": "まつ",
+        "meaning": "等待"
+      },
+      {
+        "term": "使う",
+        "kana": "つかう",
+        "meaning": "使用"
+      },
+      {
+        "term": "作る",
+        "kana": "つくる",
+        "meaning": "制作"
+      },
+      {
+        "term": "洗う",
+        "kana": "あらう",
+        "meaning": "洗"
+      },
+      {
+        "term": "教える",
+        "kana": "おしえる",
+        "meaning": "教"
+      },
+      {
+        "term": "習う",
+        "kana": "ならう",
+        "meaning": "学习（跟人学）"
+      },
+      {
+        "term": "分かる",
+        "kana": "わかる",
+        "meaning": "明白"
+      },
+      {
+        "term": "持つ",
+        "kana": "もつ",
+        "meaning": "拿着"
+      },
+      {
+        "term": "立つ",
+        "kana": "たつ",
+        "meaning": "站立"
+      }
+    ]
+  },
+  {
+    "id": "n5-adjective-core",
+    "name": "N5 常用形容词",
+    "level": "N5",
+    "type": "adjective",
+    "words": [
+      {
+        "term": "大きい",
+        "kana": "おおきい",
+        "meaning": "大"
+      },
+      {
+        "term": "小さい",
+        "kana": "ちいさい",
+        "meaning": "小"
+      },
+      {
+        "term": "新しい",
+        "kana": "あたらしい",
+        "meaning": "新"
+      },
+      {
+        "term": "古い",
+        "kana": "ふるい",
+        "meaning": "旧"
+      },
+      {
+        "term": "暑い",
+        "kana": "あつい",
+        "meaning": "热"
+      },
+      {
+        "term": "寒い",
+        "kana": "さむい",
+        "meaning": "冷"
+      },
+      {
+        "term": "高い",
+        "kana": "たかい",
+        "meaning": "高 / 贵"
+      },
+      {
+        "term": "安い",
+        "kana": "やすい",
+        "meaning": "便宜"
+      },
+      {
+        "term": "早い",
+        "kana": "はやい",
+        "meaning": "早"
+      },
+      {
+        "term": "遅い",
+        "kana": "おそい",
+        "meaning": "晚 / 慢"
+      },
+      {
+        "term": "多い",
+        "kana": "おおい",
+        "meaning": "多"
+      },
+      {
+        "term": "少ない",
+        "kana": "すくない",
+        "meaning": "少"
+      },
+      {
+        "term": "長い",
+        "kana": "ながい",
+        "meaning": "长"
+      },
+      {
+        "term": "短い",
+        "kana": "みじかい",
+        "meaning": "短"
+      },
+      {
+        "term": "明るい",
+        "kana": "あかるい",
+        "meaning": "明亮"
+      },
+      {
+        "term": "暗い",
+        "kana": "くらい",
+        "meaning": "暗"
+      },
+      {
+        "term": "忙しい",
+        "kana": "いそがしい",
+        "meaning": "忙"
+      },
+      {
+        "term": "楽しい",
+        "kana": "たのしい",
+        "meaning": "开心"
+      },
+      {
+        "term": "難しい",
+        "kana": "むずかしい",
+        "meaning": "难"
+      },
+      {
+        "term": "やさしい",
+        "kana": "やさしい",
+        "meaning": "容易 / 温柔"
+      },
+      {
+        "term": "おいしい",
+        "kana": "おいしい",
+        "meaning": "好吃"
+      },
+      {
+        "term": "まずい",
+        "kana": "まずい",
+        "meaning": "难吃"
+      },
+      {
+        "term": "近い",
+        "kana": "ちかい",
+        "meaning": "近"
+      },
+      {
+        "term": "遠い",
+        "kana": "とおい",
+        "meaning": "远"
+      },
+      {
+        "term": "良い",
+        "kana": "いい",
+        "meaning": "好"
+      },
+      {
+        "term": "悪い",
+        "kana": "わるい",
+        "meaning": "坏"
+      },
+      {
+        "term": "便利",
+        "kana": "べんり",
+        "meaning": "方便"
+      },
+      {
+        "term": "有名",
+        "kana": "ゆうめい",
+        "meaning": "有名"
+      },
+      {
+        "term": "元気",
+        "kana": "げんき",
+        "meaning": "精神"
+      },
+      {
+        "term": "静か",
+        "kana": "しずか",
+        "meaning": "安静"
+      },
+      {
+        "term": "にぎやか",
+        "kana": "にぎやか",
+        "meaning": "热闹"
+      },
+      {
+        "term": "きれい",
+        "kana": "きれい",
+        "meaning": "漂亮 / 干净"
+      },
+      {
+        "term": "好き",
+        "kana": "すき",
+        "meaning": "喜欢"
+      }
+    ]
+  },
+  {
+    "id": "n4-noun-core",
+    "name": "N4 常用名词",
+    "level": "N4",
+    "type": "noun",
+    "words": [
+      {
+        "term": "文化",
+        "kana": "ぶんか",
+        "meaning": "文化"
+      },
+      {
+        "term": "経験",
+        "kana": "けいけん",
+        "meaning": "经验"
+      },
+      {
+        "term": "方法",
+        "kana": "ほうほう",
+        "meaning": "方法"
+      },
+      {
+        "term": "気分",
+        "kana": "きぶん",
+        "meaning": "心情"
+      },
+      {
+        "term": "理由",
+        "kana": "りゆう",
+        "meaning": "理由"
+      },
+      {
+        "term": "世界",
+        "kana": "せかい",
+        "meaning": "世界"
+      }
+    ]
+  },
+  {
+    "id": "n4-verb-core",
+    "name": "N4 常用动词",
+    "level": "N4",
+    "type": "verb",
+    "words": [
+      {
+        "term": "始める",
+        "kana": "はじめる",
+        "meaning": "开始"
+      },
+      {
+        "term": "続ける",
+        "kana": "つづける",
+        "meaning": "继续"
+      },
+      {
+        "term": "働く",
+        "kana": "はたらく",
+        "meaning": "工作"
+      },
+      {
+        "term": "習う",
+        "kana": "ならう",
+        "meaning": "学习"
+      },
+      {
+        "term": "忘れる",
+        "kana": "わすれる",
+        "meaning": "忘记"
+      },
+      {
+        "term": "答える",
+        "kana": "こたえる",
+        "meaning": "回答"
+      }
+    ]
+  },
+  {
+    "id": "n4-adjective-core",
+    "name": "N4 常用形容词",
+    "level": "N4",
+    "type": "adjective",
+    "words": [
+      {
+        "term": "丁寧",
+        "kana": "ていねい",
+        "meaning": "礼貌"
+      },
+      {
+        "term": "便利",
+        "kana": "べんり",
+        "meaning": "方便"
+      },
+      {
+        "term": "有名",
+        "kana": "ゆうめい",
+        "meaning": "有名"
+      },
+      {
+        "term": "特別",
+        "kana": "とくべつ",
+        "meaning": "特别"
+      },
+      {
+        "term": "必要",
+        "kana": "ひつよう",
+        "meaning": "必要"
+      },
+      {
+        "term": "大切",
+        "kana": "たいせつ",
+        "meaning": "重要"
+      }
+    ]
+  },
+  {
+    "id": "n3-noun-core",
+    "name": "N3 常用名词",
+    "level": "N3",
+    "type": "noun",
+    "words": [
+      {
+        "term": "環境",
+        "kana": "かんきょう",
+        "meaning": "环境"
+      },
+      {
+        "term": "印象",
+        "kana": "いんしょう",
+        "meaning": "印象"
+      },
+      {
+        "term": "意見",
+        "kana": "いけん",
+        "meaning": "意见"
+      },
+      {
+        "term": "結果",
+        "kana": "けっか",
+        "meaning": "结果"
+      },
+      {
+        "term": "技術",
+        "kana": "ぎじゅつ",
+        "meaning": "技术"
+      },
+      {
+        "term": "情報",
+        "kana": "じょうほう",
+        "meaning": "信息"
+      }
+    ]
+  },
+  {
+    "id": "n3-verb-core",
+    "name": "N3 常用动词",
+    "level": "N3",
+    "type": "verb",
+    "words": [
+      {
+        "term": "増える",
+        "kana": "ふえる",
+        "meaning": "增加（自动）"
+      },
+      {
+        "term": "減る",
+        "kana": "へる",
+        "meaning": "减少"
+      },
+      {
+        "term": "調べる",
+        "kana": "しらべる",
+        "meaning": "调查"
+      },
+      {
+        "term": "伝える",
+        "kana": "つたえる",
+        "meaning": "传达"
+      },
+      {
+        "term": "比べる",
+        "kana": "くらべる",
+        "meaning": "比较"
+      },
+      {
+        "term": "選ぶ",
+        "kana": "えらぶ",
+        "meaning": "选择"
+      }
+    ]
+  },
+  {
+    "id": "n3-adjective-core",
+    "name": "N3 常用形容词",
+    "level": "N3",
+    "type": "adjective",
+    "words": [
+      {
+        "term": "正確",
+        "kana": "せいかく",
+        "meaning": "正确"
+      },
+      {
+        "term": "複雑",
+        "kana": "ふくざつ",
+        "meaning": "复杂"
+      },
+      {
+        "term": "急",
+        "kana": "きゅう",
+        "meaning": "紧急"
+      },
+      {
+        "term": "安心",
+        "kana": "あんしん",
+        "meaning": "安心"
+      },
+      {
+        "term": "自由",
+        "kana": "じゆう",
+        "meaning": "自由"
+      },
+      {
+        "term": "豊か",
+        "kana": "ゆたか",
+        "meaning": "丰富"
+      }
+    ]
+  },
+  {
+    "id": "n2-noun-core",
+    "name": "N2 常用名词",
+    "level": "N2",
+    "type": "noun",
+    "words": [
+      {
+        "term": "責任",
+        "kana": "せきにん",
+        "meaning": "责任"
+      },
+      {
+        "term": "制度",
+        "kana": "せいど",
+        "meaning": "制度"
+      },
+      {
+        "term": "課題",
+        "kana": "かだい",
+        "meaning": "课题"
+      },
+      {
+        "term": "状況",
+        "kana": "じょうきょう",
+        "meaning": "状况"
+      },
+      {
+        "term": "傾向",
+        "kana": "けいこう",
+        "meaning": "倾向"
+      },
+      {
+        "term": "効果",
+        "kana": "こうか",
+        "meaning": "效果"
+      }
+    ]
+  },
+  {
+    "id": "n2-verb-core",
+    "name": "N2 常用动词",
+    "level": "N2",
+    "type": "verb",
+    "words": [
+      {
+        "term": "改善する",
+        "kana": "かいぜんする",
+        "meaning": "改善"
+      },
+      {
+        "term": "維持する",
+        "kana": "いじする",
+        "meaning": "维持"
+      },
+      {
+        "term": "判断する",
+        "kana": "はんだんする",
+        "meaning": "判断"
+      },
+      {
+        "term": "対応する",
+        "kana": "たいおうする",
+        "meaning": "应对"
+      },
+      {
+        "term": "評価する",
+        "kana": "ひょうかする",
+        "meaning": "评价"
+      },
+      {
+        "term": "防ぐ",
+        "kana": "ふせぐ",
+        "meaning": "防止"
+      }
+    ]
+  },
+  {
+    "id": "n2-adjective-core",
+    "name": "N2 常用形容词",
+    "level": "N2",
+    "type": "adjective",
+    "words": [
+      {
+        "term": "適切",
+        "kana": "てきせつ",
+        "meaning": "恰当"
+      },
+      {
+        "term": "明確",
+        "kana": "めいかく",
+        "meaning": "明确"
+      },
+      {
+        "term": "重要",
+        "kana": "じゅうよう",
+        "meaning": "重要"
+      },
+      {
+        "term": "慎重",
+        "kana": "しんちょう",
+        "meaning": "慎重"
+      },
+      {
+        "term": "十分",
+        "kana": "じゅうぶん",
+        "meaning": "充分"
+      },
+      {
+        "term": "確実",
+        "kana": "かくじつ",
+        "meaning": "确实"
+      }
+    ]
+  },
+  {
+    "id": "n1-noun-core",
+    "name": "N1 常用名词",
+    "level": "N1",
+    "type": "noun",
+    "words": [
+      {
+        "term": "概念",
+        "kana": "がいねん",
+        "meaning": "概念"
+      },
+      {
+        "term": "根拠",
+        "kana": "こんきょ",
+        "meaning": "根据"
+      },
+      {
+        "term": "認識",
+        "kana": "にんしき",
+        "meaning": "认知"
+      },
+      {
+        "term": "側面",
+        "kana": "そくめん",
+        "meaning": "侧面"
+      },
+      {
+        "term": "実態",
+        "kana": "じったい",
+        "meaning": "实际状态"
+      },
+      {
+        "term": "文脈",
+        "kana": "ぶんみゃく",
+        "meaning": "语境"
+      }
+    ]
+  },
+  {
+    "id": "n1-verb-core",
+    "name": "N1 常用动词",
+    "level": "N1",
+    "type": "verb",
+    "words": [
+      {
+        "term": "見極める",
+        "kana": "みきわめる",
+        "meaning": "看清"
+      },
+      {
+        "term": "補う",
+        "kana": "おぎなう",
+        "meaning": "补充"
+      },
+      {
+        "term": "担う",
+        "kana": "になう",
+        "meaning": "承担"
+      },
+      {
+        "term": "遂げる",
+        "kana": "とげる",
+        "meaning": "完成"
+      },
+      {
+        "term": "促す",
+        "kana": "うながす",
+        "meaning": "促进"
+      },
+      {
+        "term": "省みる",
+        "kana": "かえりみる",
+        "meaning": "反省"
+      }
+    ]
+  },
+  {
+    "id": "n1-adjective-core",
+    "name": "N1 常用形容词",
+    "level": "N1",
+    "type": "adjective",
+    "words": [
+      {
+        "term": "顕著",
+        "kana": "けんちょ",
+        "meaning": "显著"
+      },
+      {
+        "term": "漠然",
+        "kana": "ばくぜん",
+        "meaning": "模糊"
+      },
+      {
+        "term": "妥当",
+        "kana": "だとう",
+        "meaning": "妥当"
+      },
+      {
+        "term": "微妙",
+        "kana": "びみょう",
+        "meaning": "微妙"
+      },
+      {
+        "term": "膨大",
+        "kana": "ぼうだい",
+        "meaning": "庞大"
+      },
+      {
+        "term": "厳密",
+        "kana": "げんみつ",
+        "meaning": "严密"
+      }
+    ]
+  },
+  {
+    "id": "textbook-unit-10-11",
+    "name": "第10-11单元",
+    "level": "N３",
+    "type": "verb",
+    "words": [
+      {
+        "term": "彼女",
+        "kana": "かのじょ",
+        "meaning": "女朋友；她"
+      },
+      {
+        "term": "彼",
+        "kana": "かれ",
+        "meaning": "男朋友；他"
+      },
+      {
+        "term": "記者",
+        "kana": "きしゃ",
+        "meaning": "记者"
+      },
+      {
+        "term": "興味",
+        "kana": "きょうみ",
+        "meaning": "兴趣"
+      },
+      {
+        "term": "敬語",
+        "kana": "けいご",
+        "meaning": "敬语"
+      },
+      {
+        "term": "こと",
+        "kana": "こと",
+        "meaning": "事情（例：将来のこと＝关于将来的事）"
+      },
+      {
+        "term": "地域",
+        "kana": "ちいき",
+        "meaning": "地区；地域"
+      },
+      {
+        "term": "違い",
+        "kana": "ちがい",
+        "meaning": "差异；不同"
+      },
+      {
+        "term": "物価",
+        "kana": "ぶっか",
+        "meaning": "物价"
+      },
+      {
+        "term": "文化",
+        "kana": "ぶんか",
+        "meaning": "文化"
+      },
+      {
+        "term": "ボランティア",
+        "kana": "ボランティア",
+        "meaning": "志愿者；义工"
+      },
+      {
+        "term": "無理",
+        "kana": "むり",
+        "meaning": "勉强；不可能；无理"
+      },
+      {
+        "term": "～代",
+        "kana": "～だい",
+        "meaning": "～费（例：食事代＝餐费）"
+      },
+      {
+        "term": "持つ",
+        "kana": "もつ",
+        "meaning": "持有；拿着（例：興味を持つ＝产生兴趣）"
+      },
+      {
+        "term": "学ぶ",
+        "kana": "まなぶ",
+        "meaning": "学习；学"
+      },
+      {
+        "term": "折れる",
+        "kana": "おれる",
+        "meaning": "折断；让步"
+      },
+      {
+        "term": "答える",
+        "kana": "こたえる",
+        "meaning": "回答；作答"
+      },
+      {
+        "term": "育てる",
+        "kana": "そだてる",
+        "meaning": "培养；养育"
+      },
+      {
+        "term": "インタビュー・する",
+        "kana": "インタビューする",
+        "meaning": "采访；进行访谈"
+      },
+      {
+        "term": "外食・する",
+        "kana": "がいしょくする",
+        "meaning": "外出就餐"
+      },
+      {
+        "term": "研究・する",
+        "kana": "けんきゅうする",
+        "meaning": "研究"
+      },
+      {
+        "term": "故障・する",
+        "kana": "こしょうする",
+        "meaning": "故障；出毛病"
+      },
+      {
+        "term": "節約・する",
+        "kana": "せつやくする",
+        "meaning": "节约；节省"
+      },
+      {
+        "term": "あんまり",
+        "kana": "あんまり",
+        "meaning": "（不）太……；不怎么（后接否定）"
+      },
+      {
+        "term": "運転手",
+        "kana": "うんてんしゅ",
+        "meaning": "司机"
+      },
+      {
+        "term": "駅前",
+        "kana": "えきまえ",
+        "meaning": "车站前"
+      },
+      {
+        "term": "具合",
+        "kana": "ぐあい",
+        "meaning": "状况；情况；身体状态"
+      },
+      {
+        "term": "今夜",
+        "kana": "こんや",
+        "meaning": "今晚"
+      },
+      {
+        "term": "打つ",
+        "kana": "うつ",
+        "meaning": "打；击"
+      },
+      {
+        "term": "回る",
+        "kana": "まわる",
+        "meaning": "转；绕；巡回"
+      },
+      {
+        "term": "諦める",
+        "kana": "あきらめる",
+        "meaning": "放弃；死心"
+      },
+      {
+        "term": "投げる",
+        "kana": "なげる",
+        "meaning": "扔；投；抛"
+      },
+      {
+        "term": "出張・する",
+        "kana": "しゅっちょうする",
+        "meaning": "出差"
+      },
+      {
+        "term": "アイスクリーム",
+        "kana": "アイスクリーム",
+        "meaning": "冰淇淋"
+      },
+      {
+        "term": "おじいさん",
+        "kana": "おじいさん",
+        "meaning": "老爷爷；祖父"
+      },
+      {
+        "term": "おばあさん",
+        "kana": "おばあさん",
+        "meaning": "老奶奶；祖母"
+      },
+      {
+        "term": "おにぎり",
+        "kana": "おにぎり",
+        "meaning": "饭团"
+      },
+      {
+        "term": "蚊",
+        "kana": "か",
+        "meaning": "蚊子"
+      },
+      {
+        "term": "係",
+        "kana": "かかり",
+        "meaning": "负责人；工作人员"
+      },
+      {
+        "term": "シカ",
+        "kana": "シカ",
+        "meaning": "鹿"
+      },
+      {
+        "term": "シングル",
+        "kana": "シングル",
+        "meaning": "单人（房）；单身"
+      },
+      {
+        "term": "ツイン",
+        "kana": "ツイン",
+        "meaning": "双人（房）"
+      },
+      {
+        "term": "展望台",
+        "kana": "てんぼうだい",
+        "meaning": "观景台；瞭望台"
+      },
+      {
+        "term": "泥棒",
+        "kana": "どろぼう",
+        "meaning": "小偷"
+      },
+      {
+        "term": "バッテリー",
+        "kana": "バッテリー",
+        "meaning": "电池；蓄电池"
+      },
+      {
+        "term": "フロント",
+        "kana": "フロント",
+        "meaning": "前台（酒店）"
+      },
+      {
+        "term": "ポーチ",
+        "kana": "ポーチ",
+        "meaning": "门厅；玄关"
+      },
+      {
+        "term": "ライブ",
+        "kana": "ライブ",
+        "meaning": "现场演出；直播"
+      },
+      {
+        "term": "ロック",
+        "kana": "ロック",
+        "meaning": "摇滚；锁"
+      },
+      {
+        "term": "かむ",
+        "kana": "かむ",
+        "meaning": "咬；嚼"
+      },
+      {
+        "term": "配る",
+        "kana": "くばる",
+        "meaning": "分发；分配"
+      },
+      {
+        "term": "刺す",
+        "kana": "さす",
+        "meaning": "刺；扎；蜇"
+      },
+      {
+        "term": "誘う",
+        "kana": "さそう",
+        "meaning": "邀请；约"
+      },
+      {
+        "term": "頼む",
+        "kana": "たのむ",
+        "meaning": "请求；拜托；点（餐）"
+      },
+      {
+        "term": "踏む",
+        "kana": "ふむ",
+        "meaning": "踩；踏"
+      },
+      {
+        "term": "ぶつかる",
+        "kana": "ぶつかる",
+        "meaning": "碰撞；冲突；撞上"
+      },
+      {
+        "term": "けんか・する",
+        "kana": "けんかする",
+        "meaning": "吵架；打架"
+      },
+      {
+        "term": "撮影・する",
+        "kana": "さつえいする",
+        "meaning": "拍摄；摄影"
+      },
+      {
+        "term": "充電・する",
+        "kana": "じゅうでんする",
+        "meaning": "充电"
+      },
+      {
+        "term": "招待・する",
+        "kana": "しょうたいする",
+        "meaning": "邀请；招待"
+      },
+      {
+        "term": "タッチ・する",
+        "kana": "タッチする",
+        "meaning": "触摸；接触"
+      },
+      {
+        "term": "注意・する",
+        "kana": "ちゅういする",
+        "meaning": "注意；警告；提醒"
+      },
+      {
+        "term": "赤ちゃん",
+        "kana": "あかちゃん",
+        "meaning": "婴儿；宝宝"
+      },
+      {
+        "term": "あっち",
+        "kana": "あっち",
+        "meaning": "那边；那里"
+      },
+      {
+        "term": "鉛筆",
+        "kana": "えんぴつ",
+        "meaning": "铅笔"
+      },
+      {
+        "term": "多く",
+        "kana": "おおく",
+        "meaning": "许多；大多数"
+      },
+      {
+        "term": "お化け屋敷",
+        "kana": "おばけやしき",
+        "meaning": "鬼屋"
+      },
+      {
+        "term": "おやき",
+        "kana": "おやき",
+        "meaning": "烤饼（日式点心，烤年糕饼）"
+      },
+      {
+        "term": "会場",
+        "kana": "かいじょう",
+        "meaning": "会场；场地"
+      },
+      {
+        "term": "カタカナ",
+        "kana": "カタカナ",
+        "meaning": "片假名"
+      },
+      {
+        "term": "工場",
+        "kana": "こうじょう",
+        "meaning": "工厂"
+      },
+      {
+        "term": "国際",
+        "kana": "こくさい",
+        "meaning": "国际"
+      },
+      {
+        "term": "柔道",
+        "kana": "じゅうどう",
+        "meaning": "柔道"
+      },
+      {
+        "term": "世界",
+        "kana": "せかい",
+        "meaning": "世界"
+      },
+      {
+        "term": "肩",
+        "kana": "かた",
+        "meaning": "肩膀"
+      },
+      {
+        "term": "電池",
+        "kana": "でんち",
+        "meaning": "电池"
+      },
+      {
+        "term": "トラ",
+        "kana": "トラ",
+        "meaning": "老虎"
+      },
+      {
+        "term": "博物館",
+        "kana": "はくぶつかん",
+        "meaning": "博物馆"
+      },
+      {
+        "term": "プロ",
+        "kana": "プロ",
+        "meaning": "职业选手；专业人士"
+      },
+      {
+        "term": "ミルク",
+        "kana": "ミルク",
+        "meaning": "牛奶"
+      },
+      {
+        "term": "麦",
+        "kana": "むぎ",
+        "meaning": "小麦；麦"
+      },
+      {
+        "term": "向こう",
+        "kana": "むこう",
+        "meaning": "对面；另一边"
+      },
+      {
+        "term": "モデル",
+        "kana": "モデル",
+        "meaning": "模特；模型；样板"
+      },
+      {
+        "term": "屋根",
+        "kana": "やね",
+        "meaning": "屋顶"
+      },
+      {
+        "term": "ヨーロッパ",
+        "kana": "ヨーロッパ",
+        "meaning": "欧洲"
+      },
+      {
+        "term": "～時代",
+        "kana": "～じだい",
+        "meaning": "～时代（例：江戸時代＝江户时代）"
+      },
+      {
+        "term": "～中",
+        "kana": "～じゅう",
+        "meaning": "～之中；全……（例：世界中＝全世界）"
+      },
+      {
+        "term": "翻訳",
+        "kana": "ほんやく",
+        "meaning": "翻译"
+      },
+      {
+        "term": "発売",
+        "kana": "はつばい",
+        "meaning": "发售；上市"
+      },
+      {
+        "term": "うまい",
+        "kana": "うまい",
+        "meaning": "好吃；擅长；巧妙"
+      },
+      {
+        "term": "いっぱい",
+        "kana": "いっぱい",
+        "meaning": "满；很多；一杯"
+      },
+      {
+        "term": "あれ？",
+        "kana": "あれ？",
+        "meaning": "咦？（表示疑惑、意外）"
+      },
+      {
+        "term": "～箱",
+        "kana": "～はこ",
+        "meaning": "～箱（量词，例：弁当箱＝便当盒）"
+      },
+      {
+        "term": "行う",
+        "kana": "おこなう",
+        "meaning": "进行；举行；实施"
+      },
+      {
+        "term": "造る",
+        "kana": "つくる",
+        "meaning": "制造；建造（大型物体）"
+      },
+      {
+        "term": "開く",
+        "kana": "ひらく",
+        "meaning": "开；举办（例：コンサートが開かれる＝演唱会举办）"
+      },
+      {
+        "term": "向かう",
+        "kana": "むかう",
+        "meaning": "朝向；面对；前往"
+      },
+      {
+        "term": "生きる",
+        "kana": "いきる",
+        "meaning": "活着；生活"
+      },
+      {
+        "term": "生まれる",
+        "kana": "うまれる",
+        "meaning": "出生；诞生"
+      },
+      {
+        "term": "逃げる",
+        "kana": "にげる",
+        "meaning": "逃跑；逃避"
+      },
+      {
+        "term": "設計",
+        "kana": "せっけい",
+        "meaning": "设计"
+      },
+      {
+        "term": "発見",
+        "kana": "はっけん",
+        "meaning": "发现"
+      },
+      {
+        "term": "発明・する",
+        "kana": "はつめいする",
+        "meaning": "发明"
+      },
+      {
+        "term": "気持ちいい",
+        "kana": "きもちいい",
+        "meaning": "感觉好；舒服"
+      },
+      {
+        "term": "～によって",
+        "kana": "～によって",
+        "meaning": "由……；因……；通过……（表示手段、原因、依据）"
+      }
+    ]
+  }
+]
