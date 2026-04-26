@@ -323,6 +323,8 @@ const state = {
   currentWordHadMistake: false,
   enterClearReady: false,
   hasTypedCurrentWord: false,
+  isComposing: false,
+  pendingClearAfterComposition: false,
   wrongSubmitStreak: 0,
   autoHintVisible: false,
   hoverHintVisible: false,
@@ -458,6 +460,17 @@ function bindEvents() {
   });
 
   el.answerInput.addEventListener("input", onTyping);
+  el.answerInput.addEventListener("compositionstart", () => {
+    state.isComposing = true;
+  });
+  el.answerInput.addEventListener("compositionend", () => {
+    state.isComposing = false;
+    if (state.pendingClearAfterComposition) {
+      state.pendingClearAfterComposition = false;
+      clearAnswerInputKeepFocus();
+    }
+    onTyping();
+  });
   el.answerInput.addEventListener("keydown", (event) => {
     if (shouldPlayKeyTap(event)) {
       playKeyTapSound();
@@ -859,6 +872,10 @@ function onTyping() {
     return;
   }
 
+  if (state.isComposing) {
+    return;
+  }
+
   const typed = el.answerInput.value;
   if (!typed.trim()) {
     state.enterClearReady = false;
@@ -892,7 +909,12 @@ function onTyping() {
     state.correctCount += 1;
     state.wrongSubmitStreak = 0;
     state.autoHintVisible = false;
-    el.answerInput.value = "";
+    // If IME is still composing, delay the clear until composition ends (prevents iOS “underlined” ghost text).
+    if (state.isComposing) {
+      state.pendingClearAfterComposition = true;
+    } else {
+      clearAnswerInputKeepFocus();
+    }
     el.feedback.innerHTML = "";
     state.enterClearReady = false;
     triggerConfettiBurst();
@@ -1468,6 +1490,16 @@ function focusAnswerInput() {
       el.answerInput.focus();
     }
   }, 0);
+}
+
+function clearAnswerInputKeepFocus() {
+  el.answerInput.value = "";
+  try {
+    el.answerInput.setSelectionRange(0, 0);
+  } catch {
+    // Some input types/browsers can throw; ignore.
+  }
+  focusAnswerInput();
 }
 
 function loadJSON(key, fallback) {
