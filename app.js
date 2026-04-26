@@ -472,7 +472,7 @@ function bindEvents() {
     }
     if (state.pendingAdvanceAfterComposition) {
       state.pendingAdvanceAfterComposition = false;
-      // Move immediately after IME finalized; prevents iOS from “restoring” old composing text.
+      // Move immediately after IME finalized; prevents iOS from "restoring" old composing text.
       moveNextWord();
       return;
     }
@@ -636,7 +636,10 @@ async function loadPackLibrary() {
   }
 
   try {
-    const response = await fetch(PACK_LIBRARY_PATH, { cache: "no-store" });
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 2000);
+    const response = await fetch(PACK_LIBRARY_PATH, { cache: "no-store", signal: controller.signal });
+    clearTimeout(timeout);
     if (response.ok) {
       const parsed = normalizePackLibrary(await response.json());
       if (parsed.length > 0) {
@@ -645,7 +648,7 @@ async function loadPackLibrary() {
       }
     }
   } catch {
-    // Fallback to hardcoded packs when local file fetch is blocked.
+    // Fallback to hardcoded packs when fetch is unavailable or times out (e.g. file:// protocol).
   }
 
   state.builtinPacks = normalizePackLibrary(BUILTIN_PACKS);
@@ -912,19 +915,22 @@ function onTyping() {
     state.correctCount += 1;
     state.wrongSubmitStreak = 0;
     state.autoHintVisible = false;
-    // Advance immediately even during IME composition. Keep pendingClearAfterComposition so
-    // compositionend can flush any ghost text on iOS, but don't wait for it to move forward.
-    if (state.isComposing) {
-      state.pendingClearAfterComposition = true;
+    const wasComposing = state.isComposing;
+    if (wasComposing) {
+      // blur() synchronously fires compositionend, ending the IME session before we advance.
+      // This prevents the old composition from bleeding into the next question's input.
+      el.answerInput.blur();
     } else {
       clearAnswerInputKeepFocus();
     }
-    el.feedback.innerHTML = “”;
+    el.feedback.innerHTML = "";
     state.enterClearReady = false;
     triggerConfettiBurst();
     playSuccessSound();
     updateAnswerBubble();
-    focusAnswerInput();
+    if (!wasComposing) {
+      focusAnswerInput();
+    }
 
     setTimeout(() => {
       moveNextWord();
