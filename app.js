@@ -872,10 +872,6 @@ function onTyping() {
     return;
   }
 
-  if (state.isComposing) {
-    return;
-  }
-
   const typed = el.answerInput.value;
   if (!typed.trim()) {
     state.enterClearReady = false;
@@ -910,6 +906,7 @@ function onTyping() {
     state.wrongSubmitStreak = 0;
     state.autoHintVisible = false;
     // If IME is still composing, delay the clear until composition ends (prevents iOS “underlined” ghost text).
+    // Still allow auto-advance without requiring Enter.
     if (state.isComposing) {
       state.pendingClearAfterComposition = true;
     } else {
