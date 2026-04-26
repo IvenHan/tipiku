@@ -912,24 +912,20 @@ function onTyping() {
     state.correctCount += 1;
     state.wrongSubmitStreak = 0;
     state.autoHintVisible = false;
-    // If IME is still composing, delay the clear until composition ends (prevents iOS “underlined” ghost text).
-    // Still allow auto-advance without requiring Enter.
+    // Advance immediately even during IME composition. Keep pendingClearAfterComposition so
+    // compositionend can flush any ghost text on iOS, but don't wait for it to move forward.
     if (state.isComposing) {
       state.pendingClearAfterComposition = true;
-      state.pendingAdvanceAfterComposition = true;
-      return;
     } else {
       clearAnswerInputKeepFocus();
     }
-    el.feedback.innerHTML = "";
+    el.feedback.innerHTML = “”;
     state.enterClearReady = false;
     triggerConfettiBurst();
     playSuccessSound();
     updateAnswerBubble();
     focusAnswerInput();
 
-    // On mobile, any delay here can “eat” the user's next keystrokes (the input clears on next question).
-    // Move immediately so continuous typing feels reliable.
     setTimeout(() => {
       moveNextWord();
     }, 0);
