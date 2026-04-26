@@ -325,6 +325,7 @@ const state = {
   hasTypedCurrentWord: false,
   isComposing: false,
   pendingClearAfterComposition: false,
+  pendingAdvanceAfterComposition: false,
   wrongSubmitStreak: 0,
   autoHintVisible: false,
   hoverHintVisible: false,
@@ -468,6 +469,12 @@ function bindEvents() {
     if (state.pendingClearAfterComposition) {
       state.pendingClearAfterComposition = false;
       clearAnswerInputKeepFocus();
+    }
+    if (state.pendingAdvanceAfterComposition) {
+      state.pendingAdvanceAfterComposition = false;
+      // Move immediately after IME finalized; prevents iOS from “restoring” old composing text.
+      moveNextWord();
+      return;
     }
     onTyping();
   });
@@ -909,6 +916,8 @@ function onTyping() {
     // Still allow auto-advance without requiring Enter.
     if (state.isComposing) {
       state.pendingClearAfterComposition = true;
+      state.pendingAdvanceAfterComposition = true;
+      return;
     } else {
       clearAnswerInputKeepFocus();
     }
