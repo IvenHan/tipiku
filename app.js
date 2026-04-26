@@ -900,9 +900,11 @@ function onTyping() {
     updateAnswerBubble();
     focusAnswerInput();
 
+    // On mobile, any delay here can “eat” the user's next keystrokes (the input clears on next question).
+    // Move immediately so continuous typing feels reliable.
     setTimeout(() => {
       moveNextWord();
-    }, 160);
+    }, 0);
   }
 }
 
