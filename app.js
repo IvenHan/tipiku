@@ -526,6 +526,13 @@ function bindEvents() {
   });
 
   if (el.wordWrap) {
+    // On mobile, tapping the word area should not blur the input (which would dismiss the keyboard).
+    el.wordWrap.addEventListener("pointerdown", (event) => {
+      event.preventDefault();
+      state.hoverHintVisible = true;
+      updateAnswerBubble();
+      focusAnswerInput();
+    });
     el.wordWrap.addEventListener("mouseenter", () => {
       state.hoverHintVisible = true;
       updateAnswerBubble();
@@ -533,6 +540,10 @@ function bindEvents() {
     el.wordWrap.addEventListener("mouseleave", () => {
       state.hoverHintVisible = false;
       updateAnswerBubble();
+    });
+    el.wordWrap.addEventListener("click", () => {
+      // Fallback for browsers that don't fully respect pointerdown prevention.
+      focusAnswerInput();
     });
   }
 
